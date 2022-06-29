@@ -171,7 +171,7 @@ require_once(__DIR__."/../api/products.php");
                 <input type="hidden" name="quantity" value="1" />
                 <button type="submit" name="add_to_cart">Add to
                     Cart</button>
-                <button>Wishlist</button>
+                <button>Wishlists</button>
                 <p> Recommended similar products:</p>
             <?php 
             $sql= "SELECT * FROM product WHERE product_category IN ('$productInfo[product_category]') AND product_name NOT IN ('$productInfo[product_name]') ";
